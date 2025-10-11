@@ -80,4 +80,4 @@ for ep in range(1, epochs + 1):
 
 # ---------- 7) 保存 ----------
 torch.save(model.state_dict(), BASE / "lstm_model.pt")
-print("✅ Saved to lstm_model.pt")
+print("Saved to lstm_model.pt")
