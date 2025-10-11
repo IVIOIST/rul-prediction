@@ -54,8 +54,8 @@ model = LSTM_RUL(input_size=input_size, hidden_size=64, num_layers=2, dropout=0.
 criterion = nn.MSELoss()
 optimizer = optim.Adam(model.parameters(), lr=1e-3)
 
-# ---------- 6) 训练循环 ----------
-epochs = 10
+# ---------- 6) 训练循环 ---------- higher is better, if you dont' have a nvidia gpu, change epochs to 10
+epochs = 30
 model.train()
 for ep in range(1, epochs + 1):
     running = 0.0
