@@ -1,0 +1,44 @@
+# LSTM Model - Git Ignore
+# Ignore trained models and temporary files
+
+# Model checkpoints (can be large)
+checkpoints/*.pt
+checkpoints/*.pth
+
+# But keep the directory structure
+!checkpoints/.gitkeep
+
+# Scaler files
+checkpoints/*.pkl
+
+# Results and plots
+results/*.png
+results/*.jpg
+results/*.csv
+
+# But keep the directory
+!results/.gitkeep
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

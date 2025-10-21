@@ -1,0 +1,22 @@
+# LSTM RUL Prediction Requirements
+# Author: Tony
+# Install with: pip install -r lstm_model/requirements.txt
+
+# Core dependencies
+torch>=2.0.0
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Machine Learning
+scikit-learn>=1.3.0
+
+# Progress bars
+tqdm>=4.65.0
+
+# Optional: For GPU support
+# torch with CUDA can be installed separately if needed
+# Visit: https://pytorch.org/get-started/locally/
