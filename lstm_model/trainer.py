@@ -38,9 +38,10 @@ class LSTMTrainer:
         self.scheduler = optim.lr_scheduler.ReduceLROnPlateau(
             self.optimizer, 
             mode='min', 
-            factor=0.5, 
-            patience=5,
-            verbose=True
+            factor=0.5,  # Reduce LR by half
+            patience=3,  # Wait 3 epochs (reduced from 5 for faster adjustment)
+            verbose=True,
+            min_lr=1e-6  # Minimum learning rate
         )
         
         # Training history
